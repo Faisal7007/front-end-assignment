@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card with Features</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main_body">
+        <div class="main">
+            <div class="container">
+                <div class="heading">YAY! It's BOGO</div>
+
+                <!-- Product Cards -->
+                 <div class="outer">
+
+                 <div class="inner">
+
+                <div class="main_content_box">
+                    <!-- Card 1 -->
+                    <div class="card" id="card1" onclick="toggleFeatures('card1')">
+                        <div class="card-header">
+                            <div class="unit-info">
+                                <input type="radio" id="unit1" name="unit1" class="custom-radio"/>
+                                <label for="unit1">1 Unit <span class="off">10% off</span></label>
+                            </div>
+                        </div>
+                        <div class="price-info">
+                            <span class="standard-price">Standard Price</span>
+                            <div class="price-details">
+                                <div class="current-price">$10.00 USD</div>
+                                <div class="old-price">$24.00 USD</div>
+                            </div>
+                        </div>
+                        <div id="extra-features-card1" class="extra-features">
+                            <div class="feature">
+                                <div class="feature_inner">
+                                     <label for="size1">Size</label>
+                                    
+                                   <select id="size1" name="size1" onclick="event.stopPropagation()">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+                                <div class="feature_inner">
+                                    <label for="color1">Color</label>
+                                    
+
+                                    <select id="color1" name="color1" onclick="event.stopPropagation()">
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="green">Green</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="feature">
+                                <div class="feature_inner">
+                                    <label for="size1"></label>
+                                    <select id="size1" name="size1" onclick="event.stopPropagation()">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+                                <div class="feature_inner">
+                                    <label for="color1"></label>
+                                    <select id="color1" name="color1" onclick="event.stopPropagation()">
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="green">Green</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card" id="card2" onclick="toggleFeatures('card2')">
+                        <div class=" left_triangle"></div>
+                        <div class=" right_triangle"></div>
+
+                        <div class="popular">Most Popular</div>
+                        <div class="card-header">
+                            <div class="unit-info">
+                                <input type="radio" id="unit2" name="unit2" class="custom-radio" />
+                                <label for="unit2">2 Unit <span class="off">20% off</span></label>
+                            </div>
+                        </div>
+                        <div class="price-info">
+                            <span class="standard-price">Standard Price</span>
+                            <div class="price-details">
+                                <div class="current-price">$18.00 USD</div>
+                                <div class="old-price">$24.00 USD</div>
+                            </div>
+                        </div>
+                        <div id="extra-features-card2" class="extra-features">
+                            <div class="feature">
+                                <div class="feature_inner">
+                                    <label for="size2">Size</label>
+                                    <select id="size2" name="size2" onclick="event.stopPropagation()">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+                                <div class="feature_inner">
+                                    <label for="color2">Color</label>
+                                    <select id="color2" name="color2" onclick="event.stopPropagation()">
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="green">Green</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="feature">
+                                <div class="feature_inner">
+                                    <label for="size2"></label>
+                                    <select id="size2" name="size2" onclick="event.stopPropagation()">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+                                <div class="feature_inner">
+                                    <label for="color2"></label>
+                                    <select id="color2" name="color2" onclick="event.stopPropagation()">
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="green">Green</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card" id="card3" onclick="toggleFeatures('card3')">
+                        <div class="card-header">
+                            <div class="unit-info">
+                                <input type="radio" id="unit3" name="unit3" class="custom-radio" />
+                                <label for="unit3">3 Unit <span class="off">30% off</span></label>
+                            </div>
+                        </div>
+                        <div class="price-info">
+                            <span class="standard-price">Standard Price</span>
+                            <div class="price-details">
+                                <div class="current-price">$24.00 USD</div>
+                                <div class="old-price">$24.00 USD</div>
+                            </div>
+                        </div>
+                        <div id="extra-features-card3" class="extra-features">
+                            <div class="feature">
+                                <div class="feature_inner">
+                                    <label for="size3">Size</label>
+                                    <select id="size3" name="size3" onclick="event.stopPropagation()">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+                                <div class="feature_inner">
+                                    <label for="color3">Color</label>
+                                    <select id="color3" name="color3" onclick="event.stopPropagation()">
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="green">Green</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="feature">
+                                <div class="feature_inner">
+                                    <label for="size3"></label>
+                                    <select id="size3" name="size3" onclick="event.stopPropagation()">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+                                <div class="feature_inner">
+                                    <label for="color3"></label>
+                                    <select id="color3" name="color3" onclick="event.stopPropagation()">
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="green">Green</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="delivery_box">
+                    <div class="left">Free Delivery</div>
+                    <div class="right">Total : $18.00 USD</div>
+                </div>
+                <button class="button">+ Add to Cart</button>
+            </div>
+        </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
